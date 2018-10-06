@@ -1,3 +1,5 @@
+#score to be fetched from crick buzz and be parsed with BeautifulSoup
+
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 driver=webdriver.Firefox()
