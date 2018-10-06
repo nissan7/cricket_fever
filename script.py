@@ -1,5 +1,5 @@
 #score to be fetched from crick buzz and be parsed with BeautifulSoup
-
+#hactober is here
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 driver=webdriver.Firefox()
