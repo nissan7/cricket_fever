@@ -12,9 +12,9 @@ submit_button.click()
 
 driver.implicitly_wait(20)
 
-#submit_button = driver.find_elements_by_xpath('//*[@id="mobile"]')[0].send_keys("8906713946")
+submit_button = driver.find_elements_by_xpath('//*[@id="mobile"]')[0].send_keys("8906713946")
 print element
-#element = driver.find_element_by_name("message").send_keys("loralassannnn")
+element = driver.find_element_by_name("message").send_keys("loralassannnn")
 
 submit_button = driver.find_elements_by_xpath('//*[@id="sendButton"]')[0].click()
 driver.implicitly_wait(10)
