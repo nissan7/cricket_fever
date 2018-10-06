@@ -1,3 +1,5 @@
+#score to be fetched from crick buzz and be parsed with BeautifulSoup
+#hactober is here
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 driver=webdriver.Firefox()
@@ -10,11 +12,11 @@ element = driver.find_element_by_name("password").send_keys("")
 submit_button = driver.find_elements_by_xpath('/html/body/div[6]/div[2]/div/div[3]/form/div[2]/div[2]/button')[0]
 submit_button.click()
 
-driver.implicitly_wait(10)
+driver.implicitly_wait(20)
 
-#submit_button = driver.find_elements_by_xpath('//*[@id="mobile"]')[0].send_keys("8906713946")
+submit_button = driver.find_elements_by_xpath('//*[@id="mobile"]')[0].send_keys("8906713946")
 print element
-#element = driver.find_element_by_name("message").send_keys("loralassannnn")
+element = driver.find_element_by_name("message").send_keys("loralassannnn")
 
 submit_button = driver.find_elements_by_xpath('//*[@id="sendButton"]')[0].click()
 driver.implicitly_wait(10)
